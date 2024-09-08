@@ -1,6 +1,13 @@
 import { ApolloServer, gql } from 'apollo-server'
 import { randomUUID } from 'node:crypto'
 
+/**
+ * Duas abordagens para codar o GraphQL:
+ * 
+ * - Schema first approach (essa abordagem)
+ * - Code first (API no SRC)
+ */
+
 const typeDefs = gql`
     type User {
         id: String!
